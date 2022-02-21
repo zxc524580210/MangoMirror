@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B99BB3527B901E7002F7106 /* AVSVideoRenderMacImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B99BB3427B901E7002F7106 /* AVSVideoRenderMacImpl.m */; };
+		8B99BB3B27B94396002F7106 /* AudioRenderMacImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B99BB3A27B94396002F7106 /* AudioRenderMacImpl.m */; };
+		8BAC33BA26BFC90D007CD55E /* AgoraAIDenoiseExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAC33AF26BFC8F1007CD55E /* AgoraAIDenoiseExtension.framework */; };
+		8BAC33BB26BFC90D007CD55E /* AgoraAIDenoiseExtension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAC33AF26BFC8F1007CD55E /* AgoraAIDenoiseExtension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8BAC33BC26BFC90D007CD55E /* AgoraCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAC33AC26BFC8F1007CD55E /* AgoraCore.framework */; };
+		8BAC33BD26BFC90D007CD55E /* AgoraCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAC33AC26BFC8F1007CD55E /* AgoraCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8BAC33BE26BFC90D007CD55E /* AgoraDav1dExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAC33B026BFC8F1007CD55E /* AgoraDav1dExtension.framework */; };
+		8BAC33BF26BFC90D007CD55E /* AgoraDav1dExtension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAC33B026BFC8F1007CD55E /* AgoraDav1dExtension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8BAC33C026BFC90D007CD55E /* Agorafdkaac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAC33AB26BFC8F1007CD55E /* Agorafdkaac.framework */; };
+		8BAC33C126BFC90D007CD55E /* Agorafdkaac.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAC33AB26BFC8F1007CD55E /* Agorafdkaac.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8BAC33C226BFC90D007CD55E /* Agoraffmpeg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAC33AD26BFC8F1007CD55E /* Agoraffmpeg.framework */; };
+		8BAC33C326BFC90D007CD55E /* Agoraffmpeg.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAC33AD26BFC8F1007CD55E /* Agoraffmpeg.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8BAC33C426BFC90E007CD55E /* AgoraJNDExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAC33A826BFC8F1007CD55E /* AgoraJNDExtension.framework */; };
+		8BAC33C526BFC90E007CD55E /* AgoraJNDExtension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAC33A826BFC8F1007CD55E /* AgoraJNDExtension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8BAC33C626BFC90E007CD55E /* AgoraRtcKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAC33AE26BFC8F1007CD55E /* AgoraRtcKit.framework */; };
+		8BAC33C726BFC90E007CD55E /* AgoraRtcKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAC33AE26BFC8F1007CD55E /* AgoraRtcKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8BAC33C826BFC90E007CD55E /* AgoraSoundTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAC33A926BFC8F1007CD55E /* AgoraSoundTouch.framework */; };
+		8BAC33C926BFC90E007CD55E /* AgoraSoundTouch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAC33A926BFC8F1007CD55E /* AgoraSoundTouch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8BAC33CA26BFC90E007CD55E /* av1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAC33AA26BFC8F1007CD55E /* av1.framework */; };
+		8BAC33CB26BFC90E007CD55E /* av1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAC33AA26BFC8F1007CD55E /* av1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8BAC33CC26BFC90E007CD55E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BE7A11426B425D8004BE96B /* AVFoundation.framework */; };
+		8BAC33CE26BFC90E007CD55E /* CoreMediaIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BE7A11226B425D2004BE96B /* CoreMediaIO.framework */; };
+		8BC93DFA26B1443700CE9A66 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC93DF926B1443700CE9A66 /* AppDelegate.m */; };
+		8BC93DFD26B1443700CE9A66 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC93DFC26B1443700CE9A66 /* ViewController.m */; };
+		8BC93DFF26B1443900CE9A66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BC93DFE26B1443900CE9A66 /* Assets.xcassets */; };
+		8BC93E0226B1443900CE9A66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BC93E0026B1443900CE9A66 /* Main.storyboard */; };
+		8BC93E0526B1443900CE9A66 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC93E0426B1443900CE9A66 /* main.m */; };
+		8BC93E0E26B145F000CE9A66 /* av-capture.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8BC93E0D26B145F000CE9A66 /* av-capture.mm */; };
+		8BE7A11026B41730004BE96B /* IDevInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE7A10F26B41730004BE96B /* IDevInfo.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8BAC33D026BFC90E007CD55E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8BAC33BF26BFC90D007CD55E /* AgoraDav1dExtension.framework in Embed Frameworks */,
+				8BAC33C726BFC90E007CD55E /* AgoraRtcKit.framework in Embed Frameworks */,
+				8BAC33C126BFC90D007CD55E /* Agorafdkaac.framework in Embed Frameworks */,
+				8BAC33C926BFC90E007CD55E /* AgoraSoundTouch.framework in Embed Frameworks */,
+				8BAC33BD26BFC90D007CD55E /* AgoraCore.framework in Embed Frameworks */,
+				8BAC33C326BFC90D007CD55E /* Agoraffmpeg.framework in Embed Frameworks */,
+				8BAC33CB26BFC90E007CD55E /* av1.framework in Embed Frameworks */,
+				8BAC33C526BFC90E007CD55E /* AgoraJNDExtension.framework in Embed Frameworks */,
+				8BAC33BB26BFC90D007CD55E /* AgoraAIDenoiseExtension.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8B99BB3327B901E7002F7106 /* AVSVideoRenderMacImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVSVideoRenderMacImpl.h; sourceTree = "<group>"; };
+		8B99BB3427B901E7002F7106 /* AVSVideoRenderMacImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVSVideoRenderMacImpl.m; sourceTree = "<group>"; };
+		8B99BB3627B903D3002F7106 /* VideoRenderFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoRenderFactory.h; sourceTree = "<group>"; };
+		8B99BB3927B94396002F7106 /* AudioRenderMacImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioRenderMacImpl.h; sourceTree = "<group>"; };
+		8B99BB3A27B94396002F7106 /* AudioRenderMacImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioRenderMacImpl.m; sourceTree = "<group>"; };
+		8BAC33A826BFC8F1007CD55E /* AgoraJNDExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AgoraJNDExtension.framework; sourceTree = "<group>"; };
+		8BAC33A926BFC8F1007CD55E /* AgoraSoundTouch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AgoraSoundTouch.framework; sourceTree = "<group>"; };
+		8BAC33AA26BFC8F1007CD55E /* av1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = av1.framework; sourceTree = "<group>"; };
+		8BAC33AB26BFC8F1007CD55E /* Agorafdkaac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Agorafdkaac.framework; sourceTree = "<group>"; };
+		8BAC33AC26BFC8F1007CD55E /* AgoraCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AgoraCore.framework; sourceTree = "<group>"; };
+		8BAC33AD26BFC8F1007CD55E /* Agoraffmpeg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Agoraffmpeg.framework; sourceTree = "<group>"; };
+		8BAC33AE26BFC8F1007CD55E /* AgoraRtcKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AgoraRtcKit.framework; sourceTree = "<group>"; };
+		8BAC33AF26BFC8F1007CD55E /* AgoraAIDenoiseExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AgoraAIDenoiseExtension.framework; sourceTree = "<group>"; };
+		8BAC33B026BFC8F1007CD55E /* AgoraDav1dExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AgoraDav1dExtension.framework; sourceTree = "<group>"; };
+		8BC93DF526B1443700CE9A66 /* USBScreenMirror.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = USBScreenMirror.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BC93DF826B1443700CE9A66 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8BC93DF926B1443700CE9A66 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8BC93DFB26B1443700CE9A66 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8BC93DFC26B1443700CE9A66 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8BC93DFE26B1443900CE9A66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8BC93E0126B1443900CE9A66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8BC93E0326B1443900CE9A66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BC93E0426B1443900CE9A66 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8BC93E0626B1443900CE9A66 /* USBScreenMirror.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = USBScreenMirror.entitlements; sourceTree = "<group>"; };
+		8BC93E0C26B145F000CE9A66 /* av-capture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "av-capture.h"; sourceTree = "<group>"; };
+		8BC93E0D26B145F000CE9A66 /* av-capture.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "av-capture.mm"; sourceTree = "<group>"; };
+		8BE7A10E26B41730004BE96B /* IDevInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDevInfo.h; sourceTree = "<group>"; };
+		8BE7A10F26B41730004BE96B /* IDevInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDevInfo.m; sourceTree = "<group>"; };
+		8BE7A11226B425D2004BE96B /* CoreMediaIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMediaIO.framework; path = System/Library/Frameworks/CoreMediaIO.framework; sourceTree = SDKROOT; };
+		8BE7A11426B425D8004BE96B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BC93DF226B1443700CE9A66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BAC33BC26BFC90D007CD55E /* AgoraCore.framework in Frameworks */,
+				8BAC33C626BFC90E007CD55E /* AgoraRtcKit.framework in Frameworks */,
+				8BAC33CE26BFC90E007CD55E /* CoreMediaIO.framework in Frameworks */,
+				8BAC33CC26BFC90E007CD55E /* AVFoundation.framework in Frameworks */,
+				8BAC33CA26BFC90E007CD55E /* av1.framework in Frameworks */,
+				8BAC33C426BFC90E007CD55E /* AgoraJNDExtension.framework in Frameworks */,
+				8BAC33C826BFC90E007CD55E /* AgoraSoundTouch.framework in Frameworks */,
+				8BAC33BE26BFC90D007CD55E /* AgoraDav1dExtension.framework in Frameworks */,
+				8BAC33C226BFC90D007CD55E /* Agoraffmpeg.framework in Frameworks */,
+				8BAC33BA26BFC90D007CD55E /* AgoraAIDenoiseExtension.framework in Frameworks */,
+				8BAC33C026BFC90D007CD55E /* Agorafdkaac.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8BAC33A726BFC8F1007CD55E /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				8BAC33A826BFC8F1007CD55E /* AgoraJNDExtension.framework */,
+				8BAC33A926BFC8F1007CD55E /* AgoraSoundTouch.framework */,
+				8BAC33AA26BFC8F1007CD55E /* av1.framework */,
+				8BAC33AB26BFC8F1007CD55E /* Agorafdkaac.framework */,
+				8BAC33AC26BFC8F1007CD55E /* AgoraCore.framework */,
+				8BAC33AD26BFC8F1007CD55E /* Agoraffmpeg.framework */,
+				8BAC33AE26BFC8F1007CD55E /* AgoraRtcKit.framework */,
+				8BAC33AF26BFC8F1007CD55E /* AgoraAIDenoiseExtension.framework */,
+				8BAC33B026BFC8F1007CD55E /* AgoraDav1dExtension.framework */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		8BC93DEC26B1443700CE9A66 = {
+			isa = PBXGroup;
+			children = (
+				8BC93DF726B1443700CE9A66 /* USBScreenMirror */,
+				8BC93DF626B1443700CE9A66 /* Products */,
+				8BE7A11126B425D1004BE96B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8BC93DF626B1443700CE9A66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BC93DF526B1443700CE9A66 /* USBScreenMirror.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BC93DF726B1443700CE9A66 /* USBScreenMirror */ = {
+			isa = PBXGroup;
+			children = (
+				8BC93DF826B1443700CE9A66 /* AppDelegate.h */,
+				8BC93DF926B1443700CE9A66 /* AppDelegate.m */,
+				8BC93DFB26B1443700CE9A66 /* ViewController.h */,
+				8BC93DFC26B1443700CE9A66 /* ViewController.m */,
+				8BAC33A726BFC8F1007CD55E /* libs */,
+				8BC93DFE26B1443900CE9A66 /* Assets.xcassets */,
+				8BC93E0026B1443900CE9A66 /* Main.storyboard */,
+				8BC93E0326B1443900CE9A66 /* Info.plist */,
+				8BC93E0426B1443900CE9A66 /* main.m */,
+				8BC93E0626B1443900CE9A66 /* USBScreenMirror.entitlements */,
+				8BC93E0C26B145F000CE9A66 /* av-capture.h */,
+				8BC93E0D26B145F000CE9A66 /* av-capture.mm */,
+				8BE7A10F26B41730004BE96B /* IDevInfo.m */,
+				8BE7A10E26B41730004BE96B /* IDevInfo.h */,
+				8B99BB3327B901E7002F7106 /* AVSVideoRenderMacImpl.h */,
+				8B99BB3427B901E7002F7106 /* AVSVideoRenderMacImpl.m */,
+				8B99BB3627B903D3002F7106 /* VideoRenderFactory.h */,
+				8B99BB3927B94396002F7106 /* AudioRenderMacImpl.h */,
+				8B99BB3A27B94396002F7106 /* AudioRenderMacImpl.m */,
+			);
+			path = USBScreenMirror;
+			sourceTree = "<group>";
+		};
+		8BE7A11126B425D1004BE96B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BE7A11426B425D8004BE96B /* AVFoundation.framework */,
+				8BE7A11226B425D2004BE96B /* CoreMediaIO.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8BC93DF426B1443700CE9A66 /* USBScreenMirror */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BC93E0926B1443900CE9A66 /* Build configuration list for PBXNativeTarget "USBScreenMirror" */;
+			buildPhases = (
+				8BC93DF126B1443700CE9A66 /* Sources */,
+				8BC93DF226B1443700CE9A66 /* Frameworks */,
+				8BC93DF326B1443700CE9A66 /* Resources */,
+				8BAC33D026BFC90E007CD55E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = USBScreenMirror;
+			productName = USBScreenMirror;
+			productReference = 8BC93DF526B1443700CE9A66 /* USBScreenMirror.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BC93DED26B1443700CE9A66 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					8BC93DF426B1443700CE9A66 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 8BC93DF026B1443700CE9A66 /* Build configuration list for PBXProject "USBScreenMirror" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8BC93DEC26B1443700CE9A66;
+			productRefGroup = 8BC93DF626B1443700CE9A66 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BC93DF426B1443700CE9A66 /* USBScreenMirror */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8BC93DF326B1443700CE9A66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BC93DFF26B1443900CE9A66 /* Assets.xcassets in Resources */,
+				8BC93E0226B1443900CE9A66 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BC93DF126B1443700CE9A66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BE7A11026B41730004BE96B /* IDevInfo.m in Sources */,
+				8BC93DFD26B1443700CE9A66 /* ViewController.m in Sources */,
+				8BC93E0526B1443900CE9A66 /* main.m in Sources */,
+				8B99BB3B27B94396002F7106 /* AudioRenderMacImpl.m in Sources */,
+				8BC93DFA26B1443700CE9A66 /* AppDelegate.m in Sources */,
+				8B99BB3527B901E7002F7106 /* AVSVideoRenderMacImpl.m in Sources */,
+				8BC93E0E26B145F000CE9A66 /* av-capture.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8BC93E0026B1443900CE9A66 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BC93E0126B1443900CE9A66 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8BC93E0726B1443900CE9A66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8BC93E0826B1443900CE9A66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8BC93E0A26B1443900CE9A66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = USBScreenMirror/USBScreenMirror.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/USBScreenMirror/libs",
+				);
+				INFOPLIST_FILE = USBScreenMirror/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = io.mango.MangoKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		8BC93E0B26B1443900CE9A66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = USBScreenMirror/USBScreenMirror.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/USBScreenMirror/libs",
+				);
+				INFOPLIST_FILE = USBScreenMirror/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = io.mango.MangoKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BC93DF026B1443700CE9A66 /* Build configuration list for PBXProject "USBScreenMirror" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BC93E0726B1443900CE9A66 /* Debug */,
+				8BC93E0826B1443900CE9A66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BC93E0926B1443900CE9A66 /* Build configuration list for PBXNativeTarget "USBScreenMirror" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BC93E0A26B1443900CE9A66 /* Debug */,
+				8BC93E0B26B1443900CE9A66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8BC93DED26B1443700CE9A66 /* Project object */;
+}
