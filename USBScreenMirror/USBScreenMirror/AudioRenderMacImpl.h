@@ -6,10 +6,14 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "AudioRenderFactory.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AudioRenderMacImpl : NSObject
+@interface AudioRenderMacImpl : NSObject<AudioRenderFactory>
+
+- (void)start;
+- (void)stop;
+- (void)destroy;
 
 @end
 

@@ -15,6 +15,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)setUpRenderView:(NSView *)disPlayView;
 - (void)renderSampleBuffer:(CMSampleBufferRef )sampleBuffer;
-
+- (void)cleanUp;
 @end
 NS_ASSUME_NONNULL_END

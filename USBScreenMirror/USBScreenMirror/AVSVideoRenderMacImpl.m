@@ -50,6 +50,10 @@ bool timebaseSet = false;
         disPlayView.layer = self.avsLayer;
     }
 }
+- (void)cleanUp
+{
+    [self.avsLayer flushAndRemoveImage];
+}
 - (void)renderSampleBuffer:(CMSampleBufferRef )sampleBuffer{
 
     if([self.avsLayer isReadyForMoreMediaData]) {
